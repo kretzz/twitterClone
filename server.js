@@ -5,7 +5,7 @@ const enforce = require('express-sslify')
 
 const app = express();
 
-app.use(enforce.HTTPS({ trustProtoHeader:true }))
+//app.use(enforce.HTTPS({ trustProtoHeader:true }))
 //build all packages
 app.use(serveStatic(__dirname + '/dist'))
 
